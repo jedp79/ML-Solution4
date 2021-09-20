@@ -16,11 +16,16 @@ h3{
 p{
     font-size: 12px;
 }
+header nav{
+	display: none;
+	padding: 10px 0;
+}
 
 div.top-header{
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
+		align-items: center
 }
 
 header div.top-header p{
@@ -61,21 +66,30 @@ header ul li a{
     color: #000;
 }
 
+
+header .form{
+	background-color: #FFF;
+	border: none;
+	height: 30px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between
+	
+}
 header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
+  border: none;
     outline: none;
     color: #666;
     padding: 2px;
+		max-width: 140px;
+		
 }
-
-header .form .submit{
+header .form .lupa{
     background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
+   
 
+	
+}
 div.burger-menu{
     text-align: center;
 }
@@ -173,7 +187,74 @@ article div.main-article{
     padding: 15px;
 }
 
+.register{
+	display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-between;
+max-width: 1000px;
+}
+.register input, label, radio, select, button{
+	margin: 10px 5px;
+	padding: 5px ;
+	border-radius: 4px;
+	border:none;
+}
+button{
+	min-width: 100px;
+	justify-content: center;
+	border: solid 1px #666;
+	background-color: #0044AA;
+	color: white;
+}
+.radio{
+	display: flex;
+	align-items: center
+}
+.check{
+	display: flex;
+	flex-direction: column;
+}
+
+footer{
+	background-color: #fff;
+	padding: 15px;
+}
+footer .icono{
+	color:  #1259c3;
+	width: 2em;
+	margin: 10px;
+}
+footer section{
+	text-align: center;
+	padding: 10px 30px;
+}
+
 @media (min-width: 361px){
+	header nav{
+	display:block;
+}
+header div.logo,
+header .form{
+    width: 30%;
+}
+div.top-header{
+    display: flex;    
+		flex-wrap: wrap;
+    justify-content: space-between;
+		align-items: center;
+}
+.compraCuotas{
+	font-size: 13px;
+}
+header nav ul .nav_left{
+	display: flex;
+justify-content: flex-start;
+}
+header nav ul .nav_rigth{
+	display: flex;
+justify-content:  flex-end;
+}
     main section article .description{
         display: block;
     }
@@ -198,10 +279,31 @@ article div.main-article{
     .discount{
         width: 50%;
     }
+
+		div.burger-menu{
+			display: none;
+		}
+
+		.main-navbar{
+		display:flex;
+		justify-content: space-between;
+	}
+	.main-navbar ul{
+		display:flex;
+	}
+	.main-navbar li{
+		margin: 0 5px;
+	}
 }
 
 @media (min-width: 769px){
     main section div.products article{
         width: 22%;
     }
+		.compraCuotas{
+	font-size: 18px;
+}
+.main-navbar{
+	font-size: 18px;
+}
 }
