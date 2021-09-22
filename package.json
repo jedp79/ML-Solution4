@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-     "start":"node ./src/app.js"
+    "start": "node ./src/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jedp79/mercado-liebre/issues"
   },
-  "homepage": "https://github.com/jedp79/mercado-liebre#readme"
+  "homepage": "https://github.com/jedp79/mercado-liebre#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
