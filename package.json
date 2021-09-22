@@ -1,0 +1,19 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedp79/mercado-liebre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jedp79/mercado-liebre/issues"
+  },
+  "homepage": "https://github.com/jedp79/mercado-liebre#readme"
+}
