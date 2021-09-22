@@ -132,8 +132,13 @@ h3,
 }
 
 .description{
-    display: none;
-    margin-top: 20px;
+	opacity: 0.0;
+	margin-top: 20px;
+	cursor:default;
+}
+.description:hover{
+  opacity: 1; 
+	transition-duration: 1s; 
 }
 
 section.banner img{
@@ -156,7 +161,7 @@ main section article img{
 
 main section article i,
 .discount{
-    color: #39b54a;
+    color: #39b54a;		
 }
 
 main section article i{
@@ -171,8 +176,13 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+		transition-duration: 0.8s;
+    transition-property: transform;
 }
+main section article i:hover{
+transform: rotate(-90deg);
 
+}
 main section h3{
     margin: 20px 0px;
 }
@@ -192,7 +202,8 @@ article div.main-article{
 flex-wrap: wrap;
 flex-direction: column;
 justify-content: space-between;
-max-width: 1000px;
+max-width: 600px;
+margin: 0 auto;
 }
 .register input, label, radio, select, button{
 	margin: 10px 5px;
@@ -200,12 +211,17 @@ max-width: 1000px;
 	border-radius: 4px;
 	border:none;
 }
+
 button{
 	min-width: 100px;
 	justify-content: center;
 	border: solid 1px #666;
-	background-color: #0044AA;
-	color: white;
+	/*background-color: #0044AA;
+	color: white;*/
+	cursor: pointer;
+}
+.enviarLogin:hover{
+background-color: #0022AA;
 }
 .radio{
 	display: flex;
@@ -228,6 +244,9 @@ footer .icono{
 footer section{
 	text-align: center;
 	padding: 10px 30px;
+}
+footer p{
+	margin: 15px 0;
 }
 
 @media (min-width: 361px){
@@ -259,8 +278,9 @@ justify-content:  flex-end;
         display: block;
     }
 
-    main section article{
+    main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+				transition-duration: 0.5s;
     }
 
     main section div.products{
@@ -293,6 +313,17 @@ justify-content:  flex-end;
 	}
 	.main-navbar li{
 		margin: 0 5px;
+	}
+	.footer{
+		display: flex;    
+		flex-wrap: nowrap;
+    justify-content: flex-start;
+		
+	
+	}
+		footer section{
+		text-align: center;
+	
 	}
 }
 

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">			
     </head>
     <body>
         <header>
@@ -43,56 +43,16 @@
         </section>
   <main>
 		<h3>Completá tus datos</h3>
-		<form class="register" action="/register" method="POST">
-			<input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" required>
-			<input type="text" name="Nombre de usuario" placeholder="Nombre de usuari@" pattern="[A-Za-z]{3}" title="Debes ingresar un mínimo de 3 caracteres" required>
-			<label for="nacimiento">Fecha de nacomiento:</label>
-			<input type="date" name="Fecha de nacimiento" required>
-			<input type="text" name="Domicilio" placeholder="Domicilio" required>
-
-			<label for="PerfilUsuario">Perfil del usuario:</label>
-			<div class="radio">
-			<input type="radio" name="vender" value="vender">
-			<label for="vender">Vender</label>
-			<input type="radio" name="comprar" value="comprar">
-			<label for="comprar">Comprar</label>
-			</div>
-
-			<label for="Categorias"> Categorías de interés:</label>
-			<div class="check">
-			<div>
-			<input type="checkbox" name="Electro"><label for="Electro">Electro</label>
-			</div>
-			<div>
-			<input type="checkbox" name="Moda"><label for="Moda">Moda</label>
-			</div>
-			<div>
-			<input type="checkbox" name="Hogar"><label for="Hogar">Hogar</label>
-			</div>
-			<div>
-			<input type="checkbox" name="Juguetería"><label for="Juguetería">Juguetería</label>
-			</div>
-			<div>
-			<input type="checkbox" name="Vida Sana"><label for="Vida Sana">Vida Sana</label>
-			</div>
+		<form class="register" action="/login" method="POST">
 			
-			</div>
-			<!--<select name="Interes">
-				<option value="Electro">Electro</option>
-				<option value="Moda">Moda</option>
-				<option value="Hogar">Hogar</option>
-				<option value="Juguetería">Juguetería</option>
-				<option value="Vida Sana">Vida Sana</option>
-			</select>-->
-
-			<label>Elige una foto para tu perfil:</label>
-			<input type="file" name="avatar" accept=".jpg">
+			<input type="text" name="Nombre de usuario" placeholder="Nombre de usuari@" pattern="[A-Za-z]{3}" title="Debes ingresar un mínimo de 3 caracteres" required>
+			
 
 			<input type="password" name="Contraseña" placeholder="Contraseña" required>
-			<input type="password" name="Contraseña" placeholder="Confirmar contraseña" required>
+	
 			<div class="radio">
 			
- 			<button type="submit">Enviar</button>
+ 			<button class="enviarLogin" type="submit">Enviar</button>
 			<button type="reset">Cancelar</button>
 			</div>
 	</form>
